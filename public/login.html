@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon-v2.ico">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+</head>
+<body>
+<div id="root">
+    <div class="wrapper register">
+        <a href="index.html"><span class="icon-close"><ion-icon name="close-outline"></ion-icon></span></a>
+
+        <h2>Login</h2>
+
+        <div class="input-box">
+            <span class="icon"><i class='bx bx-user'></i></span>
+            <input type="email" id="email" required>
+            <label>Email</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><i class='bx bx-key'></i></span>
+            <input type="text" id="verification-code" required>
+            <label>Verification Code</label>
+        </div>
+        <a href="index.html"><button type="submit" class="btn" onclick="login()">Login</button></a>
+    </div>
+</div> <!-- نقطه اتصال React -->
+<script src="/styles.js"></script>
+</body>

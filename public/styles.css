@@ -1,0 +1,360 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Title style */
+h1 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Button container styling */
+.buttons {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 20px;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    margin-top: 20px;
+}
+
+/* Common button styles */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #333333; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    text-align: center;
+    height: 50px; /* Slightly taller button */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #888888;
+    transform: translateY(-5px); /* Button slightly moves up */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bigger shadow effect */
+}
+
+/* Special colors for individual buttons */
+#logout-button {
+    background-color: #FF5722; /* Logout button with red color */
+}
+
+#logout-button:hover {
+    background-color: #e64a19;
+}
+
+#claim-button {
+    width: 62%;
+    background-color: #303f9f; /* Claim Rewards button with yellow color */
+}
+
+#claim-button:hover {
+    background-color: #ffb300;
+}
+
+#leaderboard-button {
+    width: 62%;
+    background-color: #3F51B5; /* Blue color for leaderboard */
+}
+
+#leaderboard-button:hover {
+    background-color: #ffb300;
+}
+#rollDice-button {
+    width: 62%;
+    background-color: #192a89;/* Blue color for leaderboard */
+}
+
+#rollDice-button:hover {
+    background-color: #ffb300;
+}
+/* Centering elements */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Responsive button layout */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 15px;
+    }
+}
+
+
+.score {
+    margin-top: 20px;
+}
+/*#leaderboard-button {*/
+/*    margin-top: 20px;*/
+/*    background-color: #007BFF;*/
+/*}*/
+/*#leaderboard-button:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+table {
+    width: 80%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color:gray;
+    color: white;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 530px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px;
+    overflow: hidden;
+}
+.wrapper h2{
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #000;
+    margin: 30px 0;
+
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #000;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 57px;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register{
+    font-size: .9em;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+
+}
+
+.login-register p a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+.icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #000;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+/* برای استایل دهی به پس‌زمینه مدال */
+.modal {
+    display: none; /* مدال در ابتدا مخفی است */
+    position: fixed; /* ثابت در صفحه */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه نیمه شفاف */
+    z-index: 1000; /* نمایش در بالای سایر عناصر */
+    align-items: center; /* مرکز کردن مدال عمودی */
+    justify-content: center; /* مرکز کردن مدال افقی */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* انیمیشن باز و بسته شدن مدال */
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه زیبا برای مدال */
+    animation: slideUp 0.3s ease-in-out; /* انیمیشن برای ظاهر شدن */
+}
+
+/* انیمیشن برای ظاهر شدن */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* استایل عنوان مدال */
+.modal-content h4 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* استایل متن مدال */
+.modal-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* استایل برای input ایمیل */
+#modal-email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; /* اضافه کردن padding به اندازه کل عنصر */
+}
+
+/* استایل برای دکمه‌ها */
+.button1 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+    background-color: #45a049;
+}
+
+/* استایل برای پاسخ پیام */
+#modal-response {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* وقتی مدال باز است */
+.modal.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
